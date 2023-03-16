@@ -16,7 +16,7 @@ body {
     position: relative;
     background-color: #F5F7FB;
     width: 550px;
-    height: 550px;
+    height: 700px;
     margin: 100px auto 0 auto;
     display: flex;
     flex-direction: column;
@@ -65,6 +65,10 @@ body {
     color: white;
 }
 
+.startBtn:hover {
+    background-color: #434e85;
+}
+
 .blob1 {
     position: absolute;
     width: auto;
@@ -83,11 +87,18 @@ body {
 
 .allQuestionsContainer {
     width: 400px;
-    margin: 10px 75px 0 75px;
+    margin: 0 75px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     z-index: 1;
+}
+
+.btnContainer, .resultsContainer {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 20px;
 }
 
 .singleQuestionContainer {
@@ -114,7 +125,8 @@ body {
 .answerBtn {
     font-size: 10px;
     width: auto;
-    height: 21px;
+    min-height: 21px;
+    max-height: auto;
     background-color: transparent;
     border: 0.771045px solid #4D5B9E;
     padding: 0 10px;
