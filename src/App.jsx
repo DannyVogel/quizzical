@@ -10,10 +10,16 @@ function App() {
     setGameStart(true)
   }
 
+  function startOver(){
+    setGameStart(false)
+  }
+
   return (
     <div className="App">
       {!gameStart && <StartPage handleClick={startGame}/>}
-      {gameStart && <QuestionsPage />}
+      {gameStart && <QuestionsPage 
+        startOver={startOver}
+      />}
       <img src="./blob1.png" alt="" className='blob1'/>
       <img src="./blob2.png" alt="" className='blob2'/>
     </div>
