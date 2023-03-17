@@ -14,11 +14,10 @@ export default function AnswerButton(props) {
   }
   
   const styles = {
-    // order: `${order}`,
     backgroundColor: color
   }
   
   return (
-    <button style={styles} className="answerBtn btn" onClick={!props.gameEnd && props.handleClick}>{props.answer}</button>
+    <button style={styles} className="answerBtn btn" onClick={!props.gameEnd ? props.handleClick : undefined}>{props.answer}</button>
   )
 }
