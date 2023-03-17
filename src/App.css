@@ -164,7 +164,7 @@ body {
         width: 100%;
         min-height: 100vh;
     }
-    
+
     .singleQuestionContainer {
         align-items: center;
     }
@@ -177,5 +177,15 @@ body {
     .answerBtn {
         flex: 50%;
     }
+
+    .resultsContainer {
+        align-items:flex-start;
+    }
+    .resultsTxt {
+        max-width: 50%;
+        height: 35px;
+        padding: 20px 0;
+    }
+
 
   }
